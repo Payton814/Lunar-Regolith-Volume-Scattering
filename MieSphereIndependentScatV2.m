@@ -40,7 +40,7 @@ for ii = 1:length(D)
     n_vD(ii) = (4*k*q_k/(pi*D_ave))*(exp(-q_k*D(ii))/(D(ii)^2));
 end
 end
-Array = readtable(strcat('./std_n_VD_', WGSize, '10d.csv'), 'VariableNamingRule', 'preserve');
+Array = readtable(strcat('./RockData/std_n_VD_', WGSize, '10d.csv'), 'VariableNamingRule', 'preserve');
 %Array = readtable("test_nVD_V2.csv", 'VariableNamingRule', 'preserve');
 x = Array{:, 'STD(n_D)'};
 x2 = x.^2;  %% The dot means square each element in the vector

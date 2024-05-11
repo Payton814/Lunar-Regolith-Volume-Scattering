@@ -5,7 +5,7 @@ freq_GHz = 0:0.001:0.9; % input frequency in GHz
 DeltaD = 0.01;
 D = 0.03:DeltaD:1.24;
 %disp(D);
-WGSize = '7a7b'; %% This defines the waveguide size we want to look at
+WGSize = '4a4b'; %% This defines the waveguide size we want to look at
 
 
 k = 0.0021;
