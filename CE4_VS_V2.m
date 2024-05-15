@@ -41,6 +41,7 @@ disp(kappa - Ekappa)
 
 
 files = dir(strcat('./CE4/', WGSize, '10d/*.csv')); %% Grabs all the CSV files in the specified folder and puts their names into an array called files
+disp(size(files));
 Trials = []; %% Initialize an empty array to be populated
 for i=1:length(files)
     array = readtable(strcat('./CE4/', WGSize, '10d/', files(i).name), 'VariableNamingRule', 'preserve');
